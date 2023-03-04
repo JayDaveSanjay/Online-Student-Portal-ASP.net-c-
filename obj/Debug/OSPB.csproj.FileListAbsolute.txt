@@ -1,0 +1,5 @@
+D:\OSPB\OSPB\bin\OSPB.dll
+D:\OSPB\OSPB\bin\OSPB.pdb
+D:\OSPB\OSPB\obj\Debug\OSPB.dll
+D:\OSPB\OSPB\obj\Debug\OSPB.pdb
+D:\OSPB\OSPB\obj\Debug\OSPB.csprojResolveAssemblyReference.cache

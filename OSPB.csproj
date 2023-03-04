@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07EC627F-5C2A-42A4-9F78-5E88B4EF8FE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OSPB</RootNamespace>
+    <AssemblyName>OSPB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="change.aspx" />
+    <Content Include="css\scss-files.txt" />
+    <Content Include="css\style-green.css" />
+    <Content Include="css\style-orange.css" />
+    <Content Include="css\style-purple.css" />
+    <Content Include="css\style-red.css" />
+    <Content Include="css\style-sky-blue.css" />
+    <Content Include="css\style.css" />
+    <Content Include="forgetotp.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="images\bg-1.jpg" />
+    <Content Include="images\bmiit.jpg" />
+    <Content Include="img\1st.jpg" />
+    <Content Include="img\apple-touch-icon.png" />
+    <Content Include="img\blog3.jpeg" />
+    <Content Include="img\codex1.jpg" />
+    <Content Include="img\counters-bg.jpg" />
+    <Content Include="img\drashti.jpg" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\github.jpg" />
+    <Content Include="img\IMG_8506.jpg" />
+    <Content Include="img\IMG_8511.jpg" />
+    <Content Include="img\intro-bg - Copy.jpg" />
+    <Content Include="img\intro-bg.png" />
+    <Content Include="img\intro-bg1.jpg" />
+    <Content Include="img\ip1.png" />
+    <Content Include="img\ip10.png" />
+    <Content Include="img\ip11.png" />
+    <Content Include="img\ip12.png" />
+    <Content Include="img\ip13.png" />
+    <Content Include="img\ip14.gif" />
+    <Content Include="img\ip15.gif" />
+    <Content Include="img\ip16.gif" />
+    <Content Include="img\ip17.png" />
+    <Content Include="img\ip18.png" />
+    <Content Include="img\ip2.png" />
+    <Content Include="img\ip3.png" />
+    <Content Include="img\ip4.png" />
+    <Content Include="img\ip5.png" />
+    <Content Include="img\ip6.png" />
+    <Content Include="img\ip7.png" />
+    <Content Include="img\ip8.png" />
+    <Content Include="img\ip9.png" />
+    <Content Include="img\jay.jpg" />
+    <Content Include="img\jitusir.jpg" />
+    <Content Include="img\logica 2.jpg" />
+    <Content Include="img\logica1.jpg" />
+    <Content Include="img\logica3.jpg" />
+    <Content Include="img\logica4.jpg" />
+    <Content Include="img\logika2.0.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo2.png" />
+    <Content Include="img\logo3.png" />
+    <Content Include="img\overlay-bg.jpg" />
+    <Content Include="img\post-1.jpg" />
+    <Content Include="img\post-2.jpg" />
+    <Content Include="img\post-3.jpg" />
+    <Content Include="img\sapansir.jpg" />
+    <Content Include="img\Screenshot 2022-01-19 233449.png" />
+    <Content Include="img\shr.png" />
+    <Content Include="img\shr2.png" />
+    <Content Include="img\shr3.png" />
+    <Content Include="img\shr4.png" />
+    <Content Include="img\shr5.png" />
+    <Content Include="img\shr6.png" />
+    <Content Include="img\shr7.png" />
+    <Content Include="img\sourabh.JPG" />
+    <Content Include="img\te.jpg.jpg" />
+    <Content Include="img\testimonial-2.jpg" />
+    <Content Include="img\testimonial-4.jpg" />
+    <Content Include="img\viraj.jpg" />
+    <Content Include="img\virajpic.png" />
+    <Content Include="img\web.jpg.jpg" />
+    <Content Include="img\web2.png" />
+    <Content Include="img\work-1.jpg" />
+    <Content Include="img\work-2.jpg" />
+    <Content Include="img\work-3.jpg" />
+    <Content Include="img\work-4.jpg" />
+    <Content Include="img\work-5.jpg" />
+    <Content Include="img\work-6.jpg" />
+    <Content Include="js\main.js" />
+    <Content Include="lib\animate\animate.css" />
+    <Content Include="lib\animate\animate.min.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\counterup\jquery.counterup.js" />
+    <Content Include="lib\counterup\jquery.counterup.min.js" />
+    <Content Include="lib\counterup\jquery.waypoints.min.js" />
+    <Content Include="lib\easing\easing.js" />
+    <Content Include="lib\easing\easing.min.js" />
+    <Content Include="lib\font-awesome\css\font-awesome.css" />
+    <Content Include="lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="lib\ionicons\css\ionicons.css" />
+    <Content Include="lib\ionicons\css\ionicons.min.css" />
+    <Content Include="lib\ionicons\fonts\ionicons.svg" />
+    <Content Include="lib\jquery\jquery-migrate.min.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="lib\lightbox\css\lightbox.css" />
+    <Content Include="lib\lightbox\css\lightbox.min.css" />
+    <Content Include="lib\lightbox\images\close.png" />
+    <Content Include="lib\lightbox\images\loading.gif" />
+    <Content Include="lib\lightbox\images\next.png" />
+    <Content Include="lib\lightbox\images\prev.png" />
+    <Content Include="lib\lightbox\js\lightbox.js" />
+    <Content Include="lib\lightbox\js\lightbox.min.js" />
+    <Content Include="lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="lib\owlcarousel\owl.carousel.js" />
+    <Content Include="lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="lib\popper\popper.min.js" />
+    <Content Include="lib\typed\typed.js" />
+    <Content Include="lib\typed\typed.min.js" />
+    <Content Include="master css\bootstrap.min.css" />
+    <Content Include="master css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="master css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="master css\bootstrap\mixins\_visibility.css" />
+    <Content Include="master css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="master css\bootstrap\_media.css" />
+    <Content Include="master css\style.css" />
+    <Content Include="master js\bootstrap.min.js" />
+    <Content Include="master js\jquery.min.js" />
+    <Content Include="master js\main.js" />
+    <Content Include="master js\popper.js" />
+    <Content Include="otp.aspx" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Styles\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="Styles\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="Styles\css\bootstrap\mixins\_transition.css" />
+    <Content Include="Styles\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="Styles\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="Styles\css\bootstrap\_media.css" />
+    <Content Include="Styles\css\style.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="login.aspx" />
+    <Content Include="user.aspx" />
+    <Content Include="bulk.aspx" />
+    <Content Include="profile.aspx" />
+    <Content Include="changepass.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="change.aspx.cs">
+      <DependentUpon>change.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="change.aspx.designer.cs">
+      <DependentUpon>change.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgetotp.aspx.cs">
+      <DependentUpon>forgetotp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgetotp.aspx.designer.cs">
+      <DependentUpon>forgetotp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otp.aspx.cs">
+      <DependentUpon>otp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otp.aspx.designer.cs">
+      <DependentUpon>otp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bulk.aspx.cs">
+      <DependentUpon>bulk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bulk.aspx.designer.cs">
+      <DependentUpon>bulk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changepass.aspx.cs">
+      <DependentUpon>changepass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changepass.aspx.designer.cs">
+      <DependentUpon>changepass.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\.DS_Store" />
+    <Content Include="Site1.Master" />
+    <None Include="lib\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="lib\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="lib\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="lib\ionicons\fonts\ionicons.eot" />
+    <None Include="lib\ionicons\fonts\ionicons.ttf" />
+    <None Include="lib\ionicons\fonts\ionicons.woff" />
+    <None Include="lib\lightbox\links.php" />
+    <None Include="lib\owlcarousel\LICENSE" />
+    <None Include="lib\popper\popper.min.js.map.json" />
+    <None Include="lib\typed\typed.min.js.map" />
+    <None Include="master css\.DS_Store" />
+    <None Include="master css\bootstrap\.DS_Store" />
+    <None Include="master css\bootstrap\mixins\.DS_Store" />
+    <None Include="master js\.DS_Store" />
+    <None Include="Styles\css\.DS_Store" />
+    <None Include="Styles\css\bootstrap\.DS_Store" />
+    <None Include="Styles\css\bootstrap\mixins\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52420</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
