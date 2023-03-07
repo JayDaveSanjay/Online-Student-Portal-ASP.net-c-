@@ -11,7 +11,7 @@
 <asp:Button ID="Button2" runat="server" Text="Upload" class="btn btn-primary" OnClick="Button2_Click" 
          />
          </div>
-             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 </div>
 
 </asp:Content>

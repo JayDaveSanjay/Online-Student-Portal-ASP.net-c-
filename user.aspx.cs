@@ -25,17 +25,40 @@ namespace OSPB
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            String ins = "Insert into user_registration values('" + name.Text + "','" + enno.Text + "','" + email.Text + "','" + number.Text + "','" + pwd.Text + "','" + type.Text + "')";
-            SqlCommand cmd = new SqlCommand(ins, con);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-            string message = "Registered successfully.";
-            string script = "window.onload = function(){ alert('";
-            script += message;
-            script += "')};";
-            ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true);
-            cleardata();
+            string t = type.SelectedItem.Text;
+            if (t == "Faculty" || t == "Admin")
+            {
+                string enno = null;
+                String ins = "Insert into user_registration values('" + name.Text + "','" + enno + "','" + email.Text + "','" + number.Text + "','" + pwd.Text + "','" + type.Text + "')";
+                SqlCommand cmd = new SqlCommand(ins, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                string message = "Registered successfully.";
+                string script = "window.onload = function(){ alert('";
+                script += message;
+                script += "')};";
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true);
+                cleardata();
+                Button1.Enabled = false;
+                Button2.Enabled = true;
+            }
+            else if (t == "Student")
+            {
+                String ins = "Insert into user_registration values('" + name.Text + "','" + enno.Text + "','" + email.Text + "','" + number.Text + "','" + pwd.Text + "','" + type.Text + "')";
+                SqlCommand cmd = new SqlCommand(ins, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                string message = "Registered successfully.";
+                string script = "window.onload = function(){ alert('";
+                script += message;
+                script += "')};";
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true);
+                cleardata();
+                Button1.Enabled = false;
+                Button2.Enabled = true;
+            }
         }
         void cleardata()
         {
@@ -44,6 +67,34 @@ namespace OSPB
             email.Text = "";
             enno.Text = "";
             number.Text = "";
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string t = type.SelectedItem.Text;
+            if (t == "Faculty" || t == "Admin")
+            {
+                name.Enabled = true;
+                email.Enabled = true;
+                number.Enabled = true;
+                pwd.Enabled = true;
+                Button2.Enabled = false;
+                Button1.Enabled = true;
+                RequiredFieldValidator5.Enabled = false;
+                RegularExpressionValidator2.Enabled=false;
+
+            }
+            else if (t == "Student")
+            {
+                name.Enabled = true;
+                email.Enabled = true;
+                enno.Enabled = true;
+                number.Enabled = true;
+                pwd.Enabled = true;
+                Button2.Enabled = false;
+                Button1.Enabled = true;
+
+            }
         }
          
        

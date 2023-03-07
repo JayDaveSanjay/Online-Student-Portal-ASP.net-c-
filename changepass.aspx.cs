@@ -27,22 +27,37 @@ namespace OSPB
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            string email = (String)Session["loginstatus"];
             con.Open();
-            String ins = "update user_registration set pwd='" + TextBox2.Text + "' where email='" + Session["loginstatus"] +"' and pwd= '" + TextBox1.Text +"' ";
-            SqlCommand cmd = new SqlCommand(ins, con);
+            string pwd = TextBox1.Text;
+            string qry = "select * from user_registration where email='" + email + "' and pwd='" + pwd + "'";
+             SqlCommand cmd = new SqlCommand(qry, con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
-                Label3.Text = "Password Was Not Changed Successfully";
-                
+                con.Close();
+                con.Open();
+                String ins = "update user_registration set pwd='" + TextBox2.Text + "' where email='" + Session["loginstatus"] + "' and pwd= '" + TextBox1.Text + "' ";
+                SqlCommand cm = new SqlCommand(ins, con);
+                SqlDataReader sd = cm.ExecuteReader();
+                if (sd.Read())
+                {
+                    Label3.Text = "Password Was Not Changed Successfully";
+
+                }
+                else
+                {
+                    TextBox1.Text = "";
+                    TextBox2.Text = "";
+                    Label3.Text = "Password Changed Successfully";
+
+                }
             }
             else
             {
-                TextBox1.Text = "";
-                TextBox2.Text = "";
-                Label3.Text = "Password Changed Successfully";
-
+                Label3.Text = "Current Password not right";
+                HyperLink1.NavigateUrl = "forgetotp.aspx";
+                HyperLink1.Text = "Forgot Password?";
             }
         }
     }

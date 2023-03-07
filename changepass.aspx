@@ -17,6 +17,7 @@
       <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
       <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Password must contain letter and numbers only and have 8 charachters" ControlToValidate="TextBox2" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"></asp:RegularExpressionValidator>
   <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+      <asp:HyperLink ID="HyperLink1" runat="server"></asp:HyperLink>
   </div>
   
 <asp:Button ID="Button1" runat="server" Text="Update" class="btn btn-primary" 
